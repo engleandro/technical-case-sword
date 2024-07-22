@@ -1,0 +1,65 @@
+Exercise 1
+About once every two weeks, SWORD asks its patients how much they would recommend
+its therapy to someone they know on a scale from 0 to 10. Assume you have a table called
+Scores having a json string containing (among other things) the satisfaction scores of
+SWORD’s patients along with the corresponding date, as follows:
+id patient_id scores date
+1 1323 {‘satisfaction’: 9, ‘pain’: 2, ‘fatigue’: 2} 2020-06-25
+2 9032 {‘satisfaction’: 2, ‘pain’: 7, ‘fatigue’: 5} 2020-06-30
+3 2331 {‘satisfaction’: 7, ‘pain’: 1, ‘fatigue’: 1} 2020-07-05
+4 2303 {‘satisfaction’: 8, ‘pain’: 9, ‘fatigue’: 0} 2020-07-12
+5 1323 {‘satisfaction’: 10, ‘pain’: 0, ‘fatigue’: 0} 2020-07-09
+6 2331 {‘satisfaction’: 8, ‘pain’: 9, ‘fatigue’: 5} 2020-07-20
+One of our most important metrics is the NPS which is calculated with the following formula:
+number of promoters − number of detractors
+number of patients
+Patients are classified in the following groups according to their most recent satisfaction
+report:
+● > 8 is a promoter
+● < 7 is a detractor
+Write a SQL query to calculate SWORD’s Digital Therapist NPS for each month. E.g.:
+month NPS
+January 50
+February 45
+March 53
+... ...
+Exercise 2
+Write a Python program that takes as input the name of a txt file and creates another file
+having the number of occurrences of each word in the original file in descending order. E.g.:
+the 563
+of 431
+to 320
+it 210
+that 109
+…
+Your program should distribute the computation by having 10 worker threads simultaneously
+building the resulting list.
+Exercise 3
+Design a scalable and reliable data pipeline for third-party REST API Integration
+Problem Statement:
+A company is looking to establish a data pipeline for ingesting data from multiple third-party
+REST APIs, transforming and cleansing the data, and storing it in a structured format for
+querying and analysis by data analysts and data scientists. At least the 3 layers below are
+expected to be presented in the final solution:
+1. Data Ingestion Layer: A layer where the data is extracted from multiple REST APIs
+and stored in a raw format.
+2. Data Transformation Layer: Cleanses, transforms, and aggregates the raw data
+into a consistent and structured format.
+3. Data Serving Layer: Stores the transformed data in a queryable format for data
+analysts and data scientists to access and analyze using SQL queries.
+Additional Technical Requirements:
+The pipeline should be designed with scalability and reliability in mind to handle varying data
+volumes and potential errors.
+1. Error handling and Retry mechanisms: Implement robust error handling and retry
+mechanisms to ensure data integrity and pipeline continuity in the event of failures or
+data corruption.
+2. Monitoring: Implement anomaly detection mechanisms to identify unusual patterns
+or deviations from expected behaviour in the data pipeline.
+3. Scalability: Design the pipeline to handle increasing data volumes and traffic
+demands without compromising performance or reliability. Consider horizontal
+scaling techniques using distributed components and/or cloud-based infrastructure.
+Submission: Provide a detailed technical document outlining your design, including
+diagrams, flowcharts, and explanations that you may need. Justify your choices and
+consider alternative approaches, explaining why your chosen design is optimal.
+Note: The purpose is not to implement the solution but to articulate a well-thought-out
+technical analysis with considerations for scalability, reliability, and maintainability
