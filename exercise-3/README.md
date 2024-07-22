@@ -74,7 +74,7 @@ Components:
 
 Technology choices:
 - **MinIO** (**Amazon S3** or **Google Cloud Storage**) for structured data object storage.
-- **Apache Hudi on top of the Apache Spark SQL** for SQL query processing. Cloud alternatives are AWS Athena/Glue or Redshift Spectrum, Azure Synapse Analytics, or Google Big Query.
+- **Apache Hudi on top of the Apache Spark SQL** for SQL query processing. Cloud alternatives are AWS Athena/Glue or Redshift Spectrum, Azure Synapse Analytics or Databricks, or Google Big Query.
 - **Kong** for API management. Cloud alternatives are AWS API Gateway, Azure API Management, or Google API Gateway.
 - **Ray with Python runtime** to support a distributed application. Cloud alternatives are AWS Lambda, Azure Functions and Google Functions.
 - **RabitMQ** provides intercommunication in a distributed application. Cloud alternatives are AWS SNS/SQS or Event Bridge, Azure EventGrid ou EventHub, or Google PubSub.

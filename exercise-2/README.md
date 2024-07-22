@@ -1,20 +1,4 @@
-# Exercise 2
-
-Write a Python program that takes as input the name of a txt file and creates another file
-having the number of occurrences of each word in the original file in descending order. E.g.:
-
-```
-the 563
-of 431
-to 320
-it 210
-that 109
-```
-
-Your program should distribute the computation by having 10 worker threads simultaneously
-building the resulting list.
-
-# Solution
+# SOLUTION OF EXERCISE 2
 
 The solution is in the `app` folder.
 
@@ -25,4 +9,21 @@ To test it locally:
 ```bash
 # run the entrypoint of application "main.py"
 python main.py .\example.txt words.txt
+```
+
+The outcome is a text file named as `words.txt`:
+
+```
+the 23
+and 21
+data 19
+a 18
+to 14
+of 10
+in 10
+satisfaction 8
+is 8
+pain 6
+fatigue 6
+...
 ```
